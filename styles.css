@@ -11,7 +11,7 @@ body {
   box-shadow: 3px 3px 10px #4b8ca6;
   font-size: 24px;
   font-family: OCR A Std, monospace;
-}
+ }
 .logoGJ {
   background: #96d977;
   border-radius: 16px;
@@ -25,17 +25,20 @@ body {
   color: #a67458;
   text-align: center;
   cursor: grab;
-animation: go-back 1s;
+  animation: go-back 1s;
 }
 
 @keyframes go-back {
-  from {
+  0% {
     transform: translateY(-100px);
   }
-  to {
-    transform: translateX(0);
+  60% {
+    transform: translateY(50px);
   }
-} 
+   100% {
+    transform: translateX(0px);
+  }
+}
 
 input {
   border: none;
@@ -45,6 +48,22 @@ input {
   border-radius: 10px;
   padding: 2px 35px;
   margin-top: 08px;
+ animation: desliza 3s;
+}
+
+@keyframes desliza {
+  0% {
+    transform: translateX(-370px);
+  }
+  50% {
+    transform: translateX(90px);
+  }
+   90% {
+    transform: translateX(-10px);
+  }
+   100% {
+    transform: translateX(0px);
+  }
 }
 button {
   border: none;
@@ -54,7 +73,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-animation: golf 4s;
+  animation: golf 4s;
 }
 
 @keyframes golf {
@@ -64,7 +83,7 @@ animation: golf 4s;
   to {
     transform: translateX(0);
   }
-} 
+}
 h1 {
   font-size: 30px;
 }

@@ -54,7 +54,7 @@ button {
   border-radius: 10px;
   padding: 10px;
   cursor: pointer;
-animation: golf 1s;
+animation: golf 4s;
 }
 
 @keyframes golf {
